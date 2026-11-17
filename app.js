@@ -16,8 +16,8 @@ class Component extends DCLogic {
   constructor(props) {
     super(props);
     this.state = { loadPct: 0, loaderOut: false, loaderGone: false, stage: 0, started: false, panel: 0, mathStep: 0, copied: false, left: 420, running: false, done: false };
-    this.SRC = '/assets/uml-film.mp4';
-    this.SRC2 = '/assets/uml-note.mp4';
+    this.SRC = '/assets/uml-film-60.mp4';
+    this.SRC2 = '/assets/uml-note-60.mp4';
     this.rf = {};
     this.cur = 0;
     this.reduce = false;
@@ -190,7 +190,7 @@ class Component extends DCLogic {
     if (typeof fetch !== 'function') { fallback(); return; }
     fetch(this.SRC).then(function (res) {
       if (!res.ok) throw new Error('status ' + res.status);
-      const total = Number(res.headers.get('content-length')) || 3139046;
+      const total = Number(res.headers.get('content-length')) || 2591630;
       if (!res.body || !res.body.getReader) {
         return res.blob().then(function (b) { useUrl(URL.createObjectURL(b)); });
       }
