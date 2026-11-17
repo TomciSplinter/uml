@@ -17,6 +17,7 @@ class Component extends DCLogic {
     super(props);
     this.state = { loadPct: 0, loaderOut: false, loaderGone: false, stage: 0, started: false, panel: 0, mathStep: 0, copied: false, left: 420, running: false, done: false };
     this.SRC = '/assets/uml-film.mp4';
+    this.SRC2 = '/assets/uml-note.mp4';
     this.rf = {};
     this.cur = 0;
     this.reduce = false;
@@ -74,7 +75,7 @@ class Component extends DCLogic {
     this.rSbar = mk('sbar');
     this.rCert = mk('cert');
     this.rMath = mk('math');
-    this.rMbg = mk('mbg');
+    this.rMbar = mk('mbar');
     this.rOdo = mk('odo');
     this.rQuote = mk('quote');
     this.rFinMoney = mk('finMoney');
@@ -85,6 +86,13 @@ class Component extends DCLogic {
         el.setAttribute('muted', ''); el.setAttribute('playsinline', ''); el.setAttribute('webkit-playsinline', '');
       } catch (e) {}
       if (self.blobUrl) el.src = self.blobUrl;
+    });
+    this.rVid2 = mk('vid2', function (el) {
+      try {
+        el.muted = true; el.defaultMuted = true;
+        el.setAttribute('muted', ''); el.setAttribute('playsinline', ''); el.setAttribute('webkit-playsinline', '');
+      } catch (e) {}
+      if (self.blobUrl2) el.src = self.blobUrl2;
     });
     this.rCertWrap = mk('certWrap', function (el) {
       el.addEventListener('pointermove', self.onCertMove);
@@ -158,6 +166,7 @@ class Component extends DCLogic {
     clearTimeout(this.hardStop); clearTimeout(this.t1); clearTimeout(this.t2); clearTimeout(this.ct);
     try { window.removeEventListener('pointermove', this.onPM); } catch (e) {}
     if (this.blobUrl) { try { URL.revokeObjectURL(this.blobUrl); } catch (e) {} }
+    if (this.blobUrl2) { try { URL.revokeObjectURL(this.blobUrl2); } catch (e) {} }
   }
 
   loadVideo() {
@@ -169,12 +178,14 @@ class Component extends DCLogic {
       if (v) { v.src = url; try { v.load(); } catch (e) {} }
       self.setLoad(1);
       self.finishLoad();
+      self.loadSecond();
     };
     const fallback = function () {
       if (!self.alive) return;
       const v = self.rf.vid;
       if (v && !self.blobUrl) { v.src = self.SRC; try { v.load(); } catch (e) {} }
       self.finishLoad();
+      self.loadSecond();
     };
     if (typeof fetch !== 'function') { fallback(); return; }
     fetch(this.SRC).then(function (res) {
@@ -197,6 +208,28 @@ class Component extends DCLogic {
       };
       return pump();
     }).catch(fallback);
+  }
+
+  loadSecond() {
+    if (this.second) return;
+    this.second = true;
+    const self = this;
+    const direct = function () {
+      if (!self.alive) return;
+      const v = self.rf.vid2;
+      if (v && !self.blobUrl2) { v.src = self.SRC2; try { v.load(); } catch (e) {} }
+    };
+    if (typeof fetch !== 'function') { direct(); return; }
+    fetch(this.SRC2).then(function (res) {
+      if (!res.ok) throw new Error('status ' + res.status);
+      return res.blob();
+    }).then(function (b) {
+      if (!self.alive) return;
+      const url = URL.createObjectURL(b);
+      self.blobUrl2 = url;
+      const v = self.rf.vid2;
+      if (v) { v.src = url; try { v.load(); } catch (e) {} }
+    }).catch(direct);
   }
 
   setLoad(f) {
@@ -339,16 +372,24 @@ class Component extends DCLogic {
     if (mr) {
       const p = this.clamp(-mr.top / Math.max(1, mr.height - vh));
       if (mr.top < vh && mr.bottom > 0) {
-        if (R.mbg) R.mbg.style.transform = 'scale(' + (1.32 - 0.26 * p).toFixed(4) + ') translate3d(' + ((p - 0.5) * -4).toFixed(2) + '%,0,0)';
+        const v2 = R.vid2;
+        if (v2 && v2.readyState >= 1 && v2.duration && isFinite(v2.duration)) {
+          const target = this.clamp(p / 0.86) * Math.max(0, v2.duration - 0.04);
+          this.cur2 = (this.cur2 == null || this.reduce) ? target : this.cur2 + (target - this.cur2) * 0.2;
+          if (Math.abs(v2.currentTime - this.cur2) > 0.008 && !v2.seeking) {
+            try { v2.currentTime = this.cur2; } catch (e) {}
+          }
+        }
+        if (R.mbar) R.mbar.style.transform = 'scaleY(' + p.toFixed(4) + ')';
         let val = 0;
         if (p >= 0.3) {
-          const t = this.clamp((p - 0.33) / 0.5);
+          const t = this.clamp((p - 0.34) / 0.46);
           val = t >= 1 ? 5e11 : 50 * Math.pow(10, 10 * t);
         }
         this.setOdo(val);
       }
       let step = 0;
-      if (mr.top < vh * 0.35) step = p < 0.16 ? 1 : p < 0.3 ? 2 : p < 0.86 ? 3 : 4;
+      if (mr.top < vh * 0.3) step = p < 0.17 ? 1 : p < 0.31 ? 2 : p < 0.86 ? 3 : 4;
       if (step !== s.mathStep) st.mathStep = step;
     }
 
@@ -404,7 +445,7 @@ class Component extends DCLogic {
     return {
       rRoot: this.rRoot, rHdrBar: this.rHdrBar, rFilm: this.rFilm, rVwrap: this.rVwrap, rVid: this.rVid, rBar: this.rBar,
       rTapes: this.rTapes, rTrackA: this.rTrackA, rTrackB: this.rTrackB, rStory: this.rStory, rStrack: this.rStrack, rSbar: this.rSbar,
-      rCertWrap: this.rCertWrap, rCert: this.rCert, rMath: this.rMath, rMbg: this.rMbg, rOdo: this.rOdo, rQuote: this.rQuote,
+      rCertWrap: this.rCertWrap, rCert: this.rCert, rMath: this.rMath, rVid2: this.rVid2, rMbar: this.rMbar, rOdo: this.rOdo, rQuote: this.rQuote,
       rFin: this.rFin, rFinMoney: this.rFinMoney, rCur: this.rCur,
       showLoader: !s.loaderGone,
       loaderCls: s.loaderOut ? 'loader out' : 'loader',

@@ -93,8 +93,7 @@ html{scroll-behavior:smooth}
 @keyframes umlSpin{to{transform:rotate(360deg)}}
 .micro{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:7px;letter-spacing:.32em;white-space:nowrap;overflow:hidden;color:#3F7558;margin:0}
 
-.math-pin{position:relative;height:320vh}
-.money-bg{background-image:url('/assets/money.jpg');background-size:cover;background-position:center}
+.math-pin{position:relative;height:380vh}
 .mline{opacity:0;transform:translateY(34px);transition:opacity .6s ease,transform .9s cubic-bezier(.2,.8,.2,1)}
 .mline.on{opacity:1;transform:none}
 .odo{display:inline-flex;align-items:flex-start;line-height:1.1}
