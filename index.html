@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>$UML — Unlimited Money Limited</title>
+<meta name="description" content="Richer than Elon for seven minutes. One company, ten billion shares, one stranger and £50. $UML — Unlimited Money Limited, a fan-tribute memecoin on Solana.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="$UML — Unlimited Money Limited">
+<meta property="og:description" content="Richest man alive. For seven minutes. A fan-tribute memecoin on Solana.">
+<meta property="og:image" content="/assets/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"> <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&amp;family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script>window.UML_CONFIG = { contractAddress: '[CONTRACT ADDRESS — COMING SOON]' };</script>
+</head>
+<body>
+<div data-ref="rRoot" style="background: #000000; color: #F2F5F3; font-family: Inter, system-ui, sans-serif; width: 100%; min-height: 100vh; overflow-x: clip; position: relative">
+
+<div data-if="showLoader">
+<div data-c="loaderCls" role="status" aria-label="Loading">
+<div class="ld-in" style="position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: space-between; padding: clamp(20px, 4vw, 48px)">
+<div style="display: flex; justify-content: space-between; gap: 16px">
+<p class="hud">Unlimited Money Limited</p>
+<p class="hud">Prospectus · UML-001</p>
+</div>
+<div style="display: flex; flex-direction: column; align-items: flex-start; gap: 18px">
+<p class="kick">Issuing shares</p>
+<p style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(40px, 10vw, 150px); line-height: 0.9; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; color: #F2F5F3"><span data-t="loadShares"></span></p>
+<div style="width: 100%; height: 2px; background: #1E2A23"><div style="height: 100%; background: #8CF0B4; width: 0%; transition: width .2s" data-w="loadPct"></div></div>
+</div>
+<div style="display: flex; justify-content: space-between; gap: 16px">
+<p class="hud">Pasta not included</p>
+<p class="hud" style="color: #8CF0B4"><span data-t="loadPct"></span>%</p>
+</div>
+</div>
+</div>
+</div>
+
+<header class="glass" style="position: fixed; top: 0; left: 0; right: 0; z-index: 60">
+<div style="max-width: 1320px; margin: 0 auto; height: 68px; padding: 0 clamp(20px, 4vw, 48px); display: flex; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" aria-label="UML home" style="display: flex; align-items: baseline; gap: 14px; text-decoration: none">
+<span style="font-family: Montserrat, sans-serif; font-weight: 900; font-size: 26px; letter-spacing: -0.03em; color: #8CF0B4">UML</span>
+<span class="hud hide-sm">Unlimited Money Limited</span>
+</a>
+<nav class="navlinks" aria-label="Main" style="align-items: center; gap: 30px; font-size: 14px; font-weight: 500">
+<a href="#story" style="color: #B8C4BD; text-decoration: none">Story</a>
+<a href="#math" style="color: #B8C4BD; text-decoration: none">The math</a>
+<a href="#tokenomics" style="color: #B8C4BD; text-decoration: none">Tokenomics</a>
+<a href="#buy" style="color: #B8C4BD; text-decoration: none">How to buy</a>
+</nav>
+<a class="btnp" href="[BUY LINK]" style="background: #8CF0B4; color: #000; text-decoration: none; font-weight: 700; font-size: 15px; padding: 0 20px; border-radius: 999px; min-height: 44px; display: inline-flex; align-items: center">Buy $UML</a>
+</div>
+<div aria-hidden="true" style="height: 1px; background: rgba(140,240,180,0.12)"><div data-ref="rHdrBar" style="height: 100%; background: #8CF0B4; transform-origin: left center; transform: scaleX(0)"></div></div>
+</header>
+
+<section id="top" data-ref="rFilm" aria-label="The UML story. Scroll to play." style="position: relative; height: 560vh">
+<div class="vp" style="position: sticky; top: 0; width: 100%; overflow: hidden; background: #000">
+<div data-ref="rVwrap" style="position: absolute; inset: 0; transform-origin: 50% 42%; will-change: transform">
+<video data-ref="rVid" class="film-vid" muted playsinline preload="auto" aria-hidden="true"></video>
+<div class="engrave"></div>
+</div>
+<div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 56%, rgba(0,0,0,0.94) 100%)"></div>
+
+<div style="position: absolute; top: 92px; left: 0; right: 0; pointer-events: none">
+<div style="max-width: 1320px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); display: flex; justify-content: space-between; align-items: flex-start; gap: 16px">
+<div>
+<p class="hud">Prospectus · UML-001</p>
+<p class="hudv">Scene <span data-t="sceneNo"></span> / 05 <span style="color: #8A988F">— <span data-t="sceneName"></span></span></p>
+</div>
+<div style="display: flex; gap: 32px; text-align: right">
+<div><p class="hud"><span data-t="hudAL"></span></p><p class="hudv" style="color: #8CF0B4"><span data-t="hudAV"></span></p></div>
+<div class="hide-sm"><p class="hud"><span data-t="hudBL"></span></p><p class="hudv"><span data-t="hudBV"></span></p></div>
+</div>
+</div>
+</div>
+
+<div class="hide-sm" aria-hidden="true" style="position: absolute; right: clamp(20px, 3vw, 40px); top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 10px">
+<span data-c="dot0"></span><span data-c="dot1"></span><span data-c="dot2"></span><span data-c="dot3"></span><span data-c="dot4"></span>
+</div>
+
+<div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 0 clamp(20px, 4vw, 48px) clamp(28px, 5vh, 56px)">
+<div style="max-width: 1320px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 32px">
+<div aria-live="polite" style="position: relative; flex: 1 1 560px; min-width: 0; height: clamp(190px, 30vh, 270px)">
+
+<div data-c="cap0" data-a-aria-hidden="ah0">
+<p class="ln hud" style="margin-bottom: 14px"><span style="color: #8CF0B4">London · The City</span></p>
+<h1 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(32px, 5.2vw, 80px); line-height: 0.95; letter-spacing: -0.035em">
+<span class="ln"><span>One man. One company.</span></span>
+<span class="ln"><span class="serif" style="color: #8CF0B4; font-size: 1.1em">Ten billion shares.</span></span>
+</h1>
+</div>
+
+<div data-c="cap1" data-a-aria-hidden="ah1">
+<p class="ln hud" style="margin-bottom: 14px"><span style="color: #8CF0B4">Share No. 1 of 10,000,000,000</span></p>
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(30px, 4.6vw, 70px); line-height: 0.98; letter-spacing: -0.035em">
+<span class="ln"><span>He sold exactly one share.</span></span>
+<span class="ln"><span>To a stranger named <span class="serif" style="color: #8CF0B4; font-size: 1.1em">Hope</span>. For £50.</span></span>
+</h2>
+</div>
+
+<div data-c="cap2" data-a-aria-hidden="ah2">
+<p class="ln hud" style="margin-bottom: 14px"><span style="color: #8CF0B4">Registered activity: macaroni, noodles &amp; couscous</span></p>
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(30px, 4.6vw, 70px); line-height: 0.98; letter-spacing: -0.035em">
+<span class="ln"><span>He called it</span></span>
+<span class="ln"><span class="serif" style="color: #8CF0B4; font-size: 1.1em">Unlimited Money Limited.</span></span>
+</h2>
+</div>
+
+<div data-c="cap3" data-a-aria-hidden="ah3">
+<p class="ln hud" style="margin-bottom: 14px"><span style="color: #8CF0B4">10,000,000,000 × £50 =</span></p>
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(34px, 6vw, 96px); line-height: 0.95; letter-spacing: -0.04em">
+<span class="ln"><span style="color: #8CF0B4">£500,000,000,000</span></span>
+</h2>
+<p class="fade" style="margin: 16px 0 0; font-size: 18px; color: #B8C4BD">Paper valuation. Revenue: zero. Pasta: theoretical.</p>
+</div>
+
+<div data-c="cap4" data-a-aria-hidden="ah4">
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(32px, 5.2vw, 80px); line-height: 0.95; letter-spacing: -0.035em">
+<span class="ln"><span>Richest man alive.</span></span>
+<span class="ln"><span class="serif" style="color: #8CF0B4; font-size: 1.1em">For seven minutes.</span></span>
+</h2>
+<div class="fade" style="margin-top: 24px; display: flex; flex-wrap: wrap; gap: 12px">
+<a class="btnp" href="[PUMP.FUN / DEX LINK]" style="background: #8CF0B4; color: #000; text-decoration: none; font-weight: 700; font-size: 16px; padding: 0 26px; min-height: 52px; border-radius: 999px; display: inline-flex; align-items: center">Buy a share</a>
+<a class="btng" href="#story" style="border: 1px solid rgba(242,245,243,0.3); color: #F2F5F3; text-decoration: none; font-weight: 600; font-size: 16px; padding: 0 24px; min-height: 52px; border-radius: 999px; display: inline-flex; align-items: center">Read the story</a>
+</div>
+</div>
+
+</div>
+<div style="flex: 0 0 auto; display: flex; flex-direction: column; align-items: flex-end; gap: 10px">
+<span class="hud bob"><span data-t="hint"></span></span>
+<div aria-hidden="true" style="width: 160px; height: 2px; background: rgba(242,245,243,0.14); overflow: hidden"><div data-ref="rBar" style="height: 100%; background: #8CF0B4; transform-origin: left center; transform: scaleX(0)"></div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section aria-label="Contract address" style="position: relative; z-index: 2; background: #000; border-top: 1px solid #1E2A23">
+<div style="max-width: 1320px; margin: 0 auto; padding: 26px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<div style="flex: 1 1 440px; min-width: 0; display: flex; align-items: center; gap: 12px; background: #0B0F0D; border: 1px solid #1E2A23; border-radius: 14px; padding: 8px 8px 8px 18px">
+<span class="mono" style="font-size: 12px; color: #8A988F; flex: 0 0 auto">CA</span>
+<code class="mono" style="font-size: 15px; color: #F2F5F3; flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap"><span data-t="ca"></span></code>
+<button type="button" data-on="copy" aria-label="Copy contract address" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 8px; background: #1A2620; color: #8CF0B4; border: 1px solid #2C3D33; border-radius: 10px; font: 600 14px Inter, sans-serif; padding: 0 16px; min-height: 44px; cursor: pointer">
+<span data-if="copied" style="display: contents"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span>Copied</span></span>
+<span data-if="notCopied" style="display: contents"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="12" height="12" rx="2"></rect><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"></path></svg><span>Copy</span></span>
+</button>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+<span class="hud" style="margin-right: 8px">Fan tribute · Not affiliated with Max Fosh</span>
+<a class="btng" href="[DEXSCREENER LINK]" style="border: 1px solid #2C3D33; color: #F2F5F3; text-decoration: none; font-weight: 600; font-size: 15px; padding: 0 20px; min-height: 48px; border-radius: 999px; display: inline-flex; align-items: center">Chart</a>
+<a class="btng" href="[X LINK]" aria-label="$UML on X" style="border: 1px solid #2C3D33; color: #F2F5F3; text-decoration: none; width: 48px; height: 48px; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4l16 16M20 4L4 20"></path></svg></a>
+<a class="btng" href="[TELEGRAM LINK]" aria-label="$UML on Telegram" style="border: 1px solid #2C3D33; color: #F2F5F3; text-decoration: none; width: 48px; height: 48px; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 4L3 11l6 2 2 6 3-4 5 4 2-15z"></path><path d="M9 13l8-6"></path></svg></a>
+</div>
+</div>
+</section>
+
+<section data-ref="rTapes" class="tapes" aria-hidden="true">
+<div class="tape tape-b"><div data-ref="rTrackB" class="track"><span class="titem"><span>$UML on Solana</span><svg width="0.7em" height="0.7em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"></path></svg></span><span class="titem"><span>Hope was right</span><svg width="0.7em" height="0.7em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"></path></svg></span><span class="titem"><span>10,000,000,000 shares</span><svg width="0.7em" height="0.7em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"></path></svg></span><span class="titem"><span>Pasta not included</span><svg width="0.7em" height="0.7em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"></path></svg></span><span class="titem"><span>Not financial advice</span><svg width="0.7em" height="0.7em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"></path></svg></span><span class="titem"><span>$UML on Solana</span><svg width="0.7em" height="0.7em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"></path></svg></span><span class="titem"><span>Hope was right</span><svg width="0.7em" height="0.7em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"></path></svg></span><span class="titem"><span>10,000,000,000 shares</span><svg width="0.7em" height="0.7em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"></path></svg></span><span class="titem"><span>Pasta not included</span><svg width="0.7em" height="0.7em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"></path></svg></span><span class="titem"><span>Not financial advice</span><svg width="0.7em" height="0.7em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"></path></svg></span></div></div>
+<div class="tape tape-a"><div data-ref="rTrackA" class="track"><span class="titem"><span>Unlimited Money Limited</span><svg width="0.7em" height="0.7em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"></path></svg></span><span class="titem"><span>£500,000,000,000</span><svg width="0.7em" height="0.7em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"></path></svg></span><span class="titem"><span>1 share sold</span><svg width="0.7em" height="0.7em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"></path></svg></span><span class="titem"><span>Macaroni · Noodles · Couscous</span><svg width="0.7em" height="0.7em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"></path></svg></span><span class="titem"><span>Richest for 7 minutes</span><svg width="0.7em" height="0.7em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"></path></svg></span><span class="titem"><span>Unlimited Money Limited</span><svg width="0.7em" height="0.7em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"></path></svg></span><span class="titem"><span>£500,000,000,000</span><svg width="0.7em" height="0.7em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"></path></svg></span><span class="titem"><span>1 share sold</span><svg width="0.7em" height="0.7em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"></path></svg></span><span class="titem"><span>Macaroni · Noodles · Couscous</span><svg width="0.7em" height="0.7em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"></path></svg></span><span class="titem"><span>Richest for 7 minutes</span><svg width="0.7em" height="0.7em" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"></path></svg></span></div></div>
+</section>
+
+<section id="story" data-ref="rStory" class="story-pin anchor" aria-label="The story">
+<div class="vp" style="position: sticky; top: 0; overflow: hidden; display: flex; flex-direction: column; justify-content: center; gap: 26px; padding-top: 68px">
+<div data-ref="rStrack" class="strack">
+
+<div data-c="pc0">
+<p class="kick">§01 — The story</p>
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(40px, 5.4vw, 80px); line-height: 0.92; letter-spacing: -0.035em">The world's shortest <span class="serif" style="color: #8CF0B4; font-size: 1.1em">billionaire career.</span></h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #B8C4BD; max-width: 420px">Ten million people watched a British YouTuber become richer than Elon Musk. Five chapters. Roughly seven minutes of wealth.</p>
+<p class="hud bob" style="display: flex; align-items: center; gap: 10px; color: #8CF0B4">Keep scrolling <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></p>
+</div>
+
+<div data-c="pc1">
+<div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px">
+<span class="outline" style="font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(56px, 6vw, 84px); line-height: 0.8; letter-spacing: -0.04em">01</span>
+<span class="hud">The plan</span>
+</div>
+<div class="ill">
+<svg viewBox="0 0 220 200" width="100%" height="100%" fill="none" aria-hidden="true">
+<circle cx="100" cy="104" r="60" stroke="#1E2A23"></circle>
+<circle cx="100" cy="104" r="48" stroke="#1E2A23"></circle>
+<circle cx="100" cy="104" r="36" stroke="#1E2A23"></circle>
+<circle cx="100" cy="104" r="24" stroke="#1E2A23"></circle>
+<circle class="pie-arc" cx="100" cy="104" r="70" stroke="#8CF0B4" stroke-width="1.6" transform="rotate(-90 100 104)"></circle>
+<g class="slice">
+<path d="M100 104 L100 34" stroke="#8CF0B4" stroke-width="2.4" stroke-linecap="round"></path>
+<circle cx="100" cy="34" r="3.5" fill="#8CF0B4"></circle>
+<path d="M103 32 L140 14 H214" stroke="#8CF0B4" stroke-width="1"></path>
+<text x="214" y="10" text-anchor="end" fill="#8CF0B4" font-family="JetBrains Mono, monospace" font-size="9">1 share · £50</text>
+</g>
+<text x="100" y="104" text-anchor="middle" fill="#F2F5F3" font-family="Montserrat, sans-serif" font-weight="900" font-size="14">10B</text>
+<text x="100" y="116" text-anchor="middle" fill="#8A988F" font-family="JetBrains Mono, monospace" font-size="7">SHARES</text>
+</svg>
+</div>
+<div>
+<h3 style="margin: 0 0 10px; font-family: Montserrat, sans-serif; font-weight: 800; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.1">Ten billion shares. Sell one.</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #B8C4BD">Register a company with 10,000,000,000 shares. Sell just one for £50. Then argue the whole thing is worth £500 billion — enough, on paper, to beat the world's richest.</p>
+</div>
+</div>
+
+<div data-c="pc2">
+<div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px">
+<span class="outline" style="font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(56px, 6vw, 84px); line-height: 0.8; letter-spacing: -0.04em">02</span>
+<span class="hud">The company</span>
+</div>
+<div class="ill">
+<div style="position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); background: #0B0F0D; border: 1px solid #2C3D33; border-radius: 16px; padding: 18px">
+<p class="hud" style="margin-bottom: 12px">Registration form · Nature of business</p>
+<div style="display: flex; align-items: flex-start; gap: 12px">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="flex: 0 0 auto"><rect x="1" y="1" width="22" height="22" rx="5" stroke="#8CF0B4" stroke-width="1.5"></rect><path class="tick" d="M6 12.5 L10.5 17 L18 7.5" stroke="#8CF0B4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<p class="mono" style="margin: 0; font-size: 13px; line-height: 1.5; color: #F2F5F3">SIC 10730 — Manufacture of macaroni, noodles, couscous and similar farinaceous products</p>
+</div>
+</div>
+<svg class="floaty" viewBox="0 0 80 80" width="74" height="74" fill="none" aria-hidden="true" style="position: absolute; right: 0; top: -8px">
+<g stroke="#8CF0B4" stroke-width="1.6" stroke-linecap="round"><path d="M14 60 A46 46 0 0 1 60 14"></path><path d="M38 60 A22 22 0 0 1 60 38"></path><ellipse cx="26" cy="60" rx="12" ry="4"></ellipse><ellipse cx="60" cy="26" rx="4" ry="12"></ellipse><path d="M39.1 53.2 L16.3 45.8 M42.2 47.1 L22.8 33.0 M47.1 42.2 L33.0 22.8 M53.2 39.1 L45.8 16.3" stroke-width="1"></path></g>
+</svg>
+<svg class="floaty fd2" viewBox="0 0 140 100" width="84" height="60" fill="none" aria-hidden="true" style="position: absolute; left: 6%; bottom: -10px">
+<g stroke="#8CF0B4" stroke-width="1.5" stroke-linejoin="round"><path d="M70 50 L22 18 L16 26 L22 34 L16 42 L22 50 L16 58 L22 66 L16 74 L22 82 Z"></path><path d="M70 50 L118 18 L124 26 L118 34 L124 42 L118 50 L124 58 L118 66 L124 74 L118 82 Z"></path><path d="M62 46 L30 26 M62 50 L28 50 M62 54 L30 74 M78 46 L110 26 M78 50 L112 50 M78 54 L110 74" stroke-width="0.9"></path><ellipse cx="70" cy="50" rx="7" ry="13" fill="#060907"></ellipse></g>
+</svg>
+</div>
+<div>
+<h3 style="margin: 0 0 10px; font-family: Montserrat, sans-serif; font-weight: 800; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.1">Unlimited Money Limited.</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #B8C4BD">It didn't actually do anything. When the form demanded a business activity, he ticked the manufacture of macaroni, noodles and couscous. Knowing the terminology was optional.</p>
+</div>
+</div>
+
+<div data-c="pc3">
+<div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px">
+<span class="outline" style="font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(56px, 6vw, 84px); line-height: 0.8; letter-spacing: -0.04em">03</span>
+<span class="hud">The investor</span>
+</div>
+<div class="ill">
+<svg viewBox="0 0 220 200" width="100%" height="100%" fill="none" aria-hidden="true">
+<path d="M78 40 L54 192 M142 40 L166 192 M64 128 L156 128" stroke="#2C3D33" stroke-width="3" stroke-linecap="round"></path>
+<rect x="56" y="28" width="108" height="92" rx="6" fill="#0B0F0D" stroke="#8CF0B4" stroke-width="1.5"></rect>
+<rect x="62" y="34" width="96" height="80" rx="3" stroke="#1E2A23"></rect>
+<text x="110" y="58" text-anchor="middle" fill="#8A988F" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="2">SHARES</text>
+<text x="110" y="92" text-anchor="middle" fill="#8CF0B4" font-family="Montserrat, sans-serif" font-weight="900" font-size="30">£50</text>
+<text x="110" y="106" text-anchor="middle" fill="#8A988F" font-family="JetBrains Mono, monospace" font-size="8">PER SHARE</text>
+</svg>
+<div class="sticker" style="position: absolute; right: 12%; top: 2%; width: 86px; height: 86px; border-radius: 50%; background: #8CF0B4; color: #000; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: Montserrat, sans-serif; font-weight: 900; font-size: 18px; line-height: 1; box-shadow: 0 10px 30px rgba(0,0,0,0.6)"><span>SOLD</span><span class="mono" style="font-size: 10px; font-weight: 500; margin-top: 5px">1 of 10B</span></div>
+</div>
+<div>
+<h3 style="margin: 0 0 10px; font-family: Montserrat, sans-serif; font-weight: 800; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.1">A suit, a table, and Hope.</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #B8C4BD">He set up in London's financial district and pitched strangers. Most said no. Then a woman named Hope bought one share for £50 — she had a feeling something might come of it.</p>
+</div>
+</div>
+
+<div data-c="pc4">
+<div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px">
+<span class="outline" style="font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(56px, 6vw, 84px); line-height: 0.8; letter-spacing: -0.04em">04</span>
+<span class="hud">The letter</span>
+</div>
+<div class="ill">
+<svg viewBox="0 0 220 200" width="100%" height="100%" fill="none" aria-hidden="true">
+<path d="M36 96 L110 52 L184 96" stroke="#2C3D33" stroke-width="1.5" stroke-linejoin="round"></path>
+<rect x="36" y="96" width="148" height="90" fill="#0B0F0D" stroke="#2C3D33" stroke-width="1.5"></rect>
+<g class="letter">
+<rect x="46" y="44" width="128" height="122" rx="3" fill="#EEF6F1"></rect>
+<rect x="58" y="56" width="52" height="4" rx="2" fill="#9AA59F"></rect>
+<rect x="58" y="66" width="92" height="3" rx="1.5" fill="#C9D3CD"></rect>
+<rect x="58" y="73" width="78" height="3" rx="1.5" fill="#C9D3CD"></rect>
+<text x="58" y="95" fill="#0E3A22" font-family="Montserrat, sans-serif" font-weight="900" font-size="9.5">£500,000,000,000</text>
+<rect x="58" y="103" width="96" height="3" rx="1.5" fill="#C9D3CD"></rect>
+<path d="M64 112 L70 122 H58 Z" stroke="#0E3A22" stroke-width="1.4" stroke-linejoin="round"></path>
+<text x="75" y="121" fill="#0E3A22" font-family="JetBrains Mono, monospace" font-size="7">No revenue. Fraud risk.</text>
+</g>
+<path d="M36 96 L110 146 L184 96 V186 H36 Z" fill="#0B0F0D" stroke="#2C3D33" stroke-width="1.5" stroke-linejoin="round"></path>
+<path d="M36 186 L96 136 M184 186 L124 136" stroke="#1E2A23" stroke-width="1.2"></path>
+</svg>
+</div>
+<div>
+<h3 style="margin: 0 0 10px; font-family: Montserrat, sans-serif; font-weight: 800; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.1">£500,000,000,000. In writing.</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #B8C4BD">Two weeks later a valuation adviser put the implied value at £500 billion. The same letter warned that with no revenue, the setup risked accusations of fraud.</p>
+</div>
+</div>
+
+<div data-c="pc5">
+<div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px">
+<span class="outline" style="font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(56px, 6vw, 84px); line-height: 0.8; letter-spacing: -0.04em">05</span>
+<span class="hud">The fall</span>
+</div>
+<div class="ill">
+<svg viewBox="0 0 220 200" width="100%" height="100%" fill="none" aria-hidden="true">
+<rect x="102" y="36" width="16" height="10" rx="2" stroke="#8CF0B4" stroke-width="1.5"></rect>
+<path d="M110 46 V50 M150 58 L158 50" stroke="#8CF0B4" stroke-width="1.5" stroke-linecap="round"></path>
+<circle cx="110" cy="112" r="62" stroke="#8CF0B4" stroke-width="1.5"></circle>
+<circle cx="110" cy="112" r="56" stroke="#1E2A23"></circle>
+<path class="arc7" d="M110 112 L110 68 A44 44 0 0 1 139.4 79.3 Z" fill="#8CF0B4" fill-opacity="0.22"></path>
+<path d="M110.0 56.0 L110.0 66.0 M138.0 63.5 L135.0 68.7 M158.5 84.0 L153.3 87.0 M166.0 112.0 L156.0 112.0 M158.5 140.0 L153.3 137.0 M138.0 160.5 L135.0 155.3 M110.0 168.0 L110.0 158.0 M82.0 160.5 L85.0 155.3 M61.5 140.0 L66.7 137.0 M54.0 112.0 L64.0 112.0 M61.5 84.0 L66.7 87.0 M82.0 63.5 L85.0 68.7" stroke="#8A988F" stroke-width="1.5" stroke-linecap="round"></path>
+<g class="hand"><path d="M110 112 L110 62" stroke="#F2F5F3" stroke-width="2" stroke-linecap="round"></path></g>
+<circle cx="110" cy="112" r="4" fill="#8CF0B4"></circle>
+</svg>
+<div class="stamp" style="position: absolute; right: 2%; bottom: 8%; font-size: 24px; padding: 6px 14px">Dissolved</div>
+</div>
+<div>
+<h3 style="margin: 0 0 10px; font-family: Montserrat, sans-serif; font-weight: 800; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.1">Dissolved. Richest for ~7 minutes.</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #B8C4BD">Advised to shut it down, he dissolved the company. The £500 billion never reached a bank account. It just proved how absurd numbers get without a real business behind them.</p>
+</div>
+</div>
+
+</div>
+<div style="max-width: 1320px; width: 100%; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); display: flex; align-items: center; gap: 18px">
+<span class="hud" style="color: #8CF0B4"><span data-t="chap"></span></span>
+<div aria-hidden="true" style="flex: 1 1 auto; height: 2px; background: #1E2A23"><div data-ref="rSbar" style="height: 100%; background: #8CF0B4; transform-origin: left center; transform: scaleX(0)"></div></div>
+<span class="hud">05</span>
+</div>
+</div>
+</section>
+
+<section aria-label="Share certificate" style="max-width: 1320px; margin: 0 auto; padding: clamp(100px, 12vw, 180px) clamp(20px, 4vw, 48px)">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 48px">
+<div class="hl">
+<p class="kick" style="margin-bottom: 18px">§02 — Exhibit A</p>
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(40px, 5.6vw, 84px); line-height: 0.92; letter-spacing: -0.035em">
+<span class="ln"><span>Share No. 1</span></span>
+<span class="ln"><span class="serif" style="color: #8CF0B4; font-size: 1.1em">of ten billion.</span></span>
+</h2>
+</div>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #B8C4BD; max-width: 360px">The only share Unlimited Money Limited ever sold. Move your cursor over it to inspect the engraving.</p>
+</div>
+<div data-ref="rCertWrap" class="cert-wrap">
+<div class="cert-float">
+<div data-ref="rCert" class="cert hatch" style="border-radius: 26px; padding: 10px">
+<div style="position: relative; border: 1px solid #8CF0B4; border-radius: 18px; background: #040806; overflow: hidden; display: flex; flex-wrap: wrap">
+<p class="micro" aria-hidden="true" style="position: absolute; top: 9px; left: 18px; right: 18px">UNLIMITEDMONEYLIMITED · UNLIMITEDMONEYLIMITED · UNLIMITEDMONEYLIMITED · UNLIMITEDMONEYLIMITED · UNLIMITEDMONEYLIMITED · UNLIMITEDMONEYLIMITED · UNLIMITEDMONEYLIMITED</p>
+<p class="micro" aria-hidden="true" style="position: absolute; bottom: 9px; left: 18px; right: 18px">SHARE 0000000001 OF 10000000000 · CONSIDERATION £50 · SHARE 0000000001 OF 10000000000 · CONSIDERATION £50 · SHARE 0000000001 OF 10000000000</p>
+<div style="flex: 1 1 440px; min-width: 0; padding: clamp(34px, 4.4vw, 60px); display: flex; flex-direction: column; gap: 22px; position: relative; z-index: 1">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px">
+<p class="hud" style="color: #8CF0B4">Share certificate</p>
+<p class="hud">No. 0000000001</p>
+</div>
+<p style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(30px, 3.6vw, 52px); line-height: 0.95; letter-spacing: -0.03em">Unlimited Money Limited</p>
+<p class="serif" style="margin: 0; font-size: clamp(21px, 2vw, 27px); line-height: 1.3; color: #B8C4BD">This is to certify that <span style="color: #F2F5F3">Hope</span> is the registered holder of one (1) ordinary share, of ten billion in issue.</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 24px; border-top: 1px solid #1E2A23; padding-top: 22px">
+<div><p class="hud">Consideration</p><p class="hudv">£50.00</p></div>
+<div><p class="hud">Implied value</p><p class="hudv" style="color: #8CF0B4">£500,000,000,000</p></div>
+<div><p class="hud">Principal activity</p><p class="hudv">Macaroni, noodles, couscous</p></div>
+<div><p class="hud">Products made</p><p class="hudv">None</p></div>
+</div>
+</div>
+<div class="foil hide-sm" aria-hidden="true" style="flex: 0 0 18px; align-self: stretch; opacity: 0.85"></div>
+<div style="flex: 1 1 320px; min-width: 260px; position: relative; display: flex; align-items: center; justify-content: center; padding: 34px">
+<img class="spin" src="/assets/rosette.svg" alt="" style="width: 100%; max-width: 340px; aspect-ratio: 1; opacity: 0.92">
+<div aria-hidden="true" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; pointer-events: none">
+<span style="font-family: Montserrat, sans-serif; font-weight: 900; font-size: 34px; letter-spacing: -0.03em; color: #8CF0B4; background: #040806; padding: 4px 10px; border-radius: 10px">UML</span>
+</div>
+</div>
+<div class="cert-glare" aria-hidden="true"></div>
+</div>
+</div>
+</div>
+</div>
+<p class="hud" style="margin-top: 20px">Artist's impression · Not a real security · Not an offer of anything</p>
+</section>
+
+<section id="math" data-ref="rMath" class="math-pin anchor" aria-label="The math">
+<div class="vp" style="position: sticky; top: 0; overflow: hidden; display: flex; align-items: center">
+<div data-ref="rMbg" class="money-bg" aria-hidden="true" style="position: absolute; inset: -6%; opacity: 0.5; will-change: transform"></div>
+<div aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.86) 68%, #000 100%)"></div>
+<div style="position: relative; width: 100%; max-width: 1320px; margin: 0 auto; padding: 68px clamp(20px, 4vw, 48px) 0; display: flex; flex-direction: column; gap: clamp(14px, 2.6vh, 28px)">
+<p class="kick">§03 — The math</p>
+<div data-c="ml1">
+<p class="hud">Shares issued</p>
+<p style="margin: 6px 0 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(28px, 7.2vw, 112px); line-height: 1; letter-spacing: -0.03em">10,000,000,000</p>
+</div>
+<div data-c="ml2">
+<p class="hud">× What Hope paid for one</p>
+<p style="margin: 6px 0 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(28px, 7.2vw, 112px); line-height: 1; letter-spacing: -0.03em">£50</p>
+</div>
+<div data-c="ml3">
+<p class="hud">= Implied valuation</p>
+<p aria-label="£500,000,000,000" style="margin: 6px 0 0; display: flex; align-items: flex-start; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(28px, 7.2vw, 112px); line-height: 1.1; letter-spacing: -0.03em; color: #8CF0B4"><span aria-hidden="true">£</span><span data-ref="rOdo" class="odo" aria-hidden="true"><span class="odo-col"><span class="odo-strip"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span><span class="odo-col"><span class="odo-strip"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span><span class="odo-col"><span class="odo-strip"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span><span class="odo-comma">,</span><span class="odo-col"><span class="odo-strip"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span><span class="odo-col"><span class="odo-strip"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span><span class="odo-col"><span class="odo-strip"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span><span class="odo-comma">,</span><span class="odo-col"><span class="odo-strip"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span><span class="odo-col"><span class="odo-strip"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span><span class="odo-col"><span class="odo-strip"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span><span class="odo-comma">,</span><span class="odo-col"><span class="odo-strip"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span><span class="odo-col"><span class="odo-strip"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span><span class="odo-col"><span class="odo-strip"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></span></span></span></p>
+</div>
+<p data-c="ml4" style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #B8C4BD">Revenue: £0. Pasta produced: none. Arithmetic: technically correct.</p>
+</div>
+</div>
+</section>
+
+<section aria-label="The receipts" style="max-width: 1320px; margin: 0 auto; padding: clamp(100px, 12vw, 180px) clamp(20px, 4vw, 48px)">
+<div class="hl" style="margin-bottom: 56px">
+<p class="kick" style="margin-bottom: 18px">§04 — The receipts</p>
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(36px, 5vw, 76px); line-height: 0.95; letter-spacing: -0.035em">
+<span class="ln"><span>Elon needed entire companies.</span></span>
+<span class="ln"><span class="serif" style="color: #8CF0B4; font-size: 1.1em">Max needed £50 and some pasta.</span></span>
+</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 48px 40px; max-width: 980px">
+<div>
+<div class="slot"></div>
+<div class="rclip">
+<div class="receipt print">
+<p style="text-align: center; font-weight: 500; letter-spacing: 0.2em">E. MUSK</p>
+<p style="text-align: center; font-size: 11px; color: #555">HOW TO GET RICH · STANDARD METHOD</p>
+<div class="rule"></div>
+<div class="rrow"><span>1 × Zip2</span><span>✓</span></div>
+<div class="rrow"><span>1 × PayPal</span><span>✓</span></div>
+<div class="rrow"><span>1 × Tesla</span><span>✓</span></div>
+<div class="rrow"><span>1 × SpaceX</span><span>✓</span></div>
+<div class="rrow"><span>Decades of work</span><span>✓</span></div>
+<div class="rule"></div>
+<div class="rrow" style="font-weight: 700; font-size: 14px"><span>TOTAL</span><span>Entire companies</span></div>
+<div class="barcode"></div>
+<p style="margin-top: 8px; text-align: center; font-size: 11px; color: #555">THANK YOU FOR YOUR DECADES</p>
+</div>
+</div>
+</div>
+<div>
+<div class="slot"></div>
+<div class="rclip">
+<div class="receipt print">
+<p style="text-align: center; font-weight: 500; letter-spacing: 0.2em">M. FOSH</p>
+<p style="text-align: center; font-size: 11px; color: #555">HOW TO GET RICH · EXPRESS METHOD</p>
+<div class="rule"></div>
+<div class="rrow"><span>1 × Limited company</span><span>(pasta)</span></div>
+<div class="rrow"><span>10,000,000,000 × Shares</span><span>£0.00</span></div>
+<div class="rrow"><span>1 × Stranger named Hope</span><span>priceless</span></div>
+<div class="rrow"><span>1 × Share sold</span><span>£50.00</span></div>
+<div class="rrow"><span>Revenue</span><span>£0.00</span></div>
+<div class="rule"></div>
+<div class="rrow" style="font-weight: 700; font-size: 14px"><span>TOTAL IMPLIED</span><span>£500,000,000,000</span></div>
+<div class="barcode"></div>
+<p style="margin-top: 8px; text-align: center; font-size: 11px; color: #555">VALID FOR APPROX. 7 MINUTES</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section aria-label="Billionaire timer" data-c="timerCls" style="position: relative; overflow: clip; border-top: 1px solid #1E2A23; border-bottom: 1px solid #1E2A23; background: #040705">
+<div data-if="running">
+<div class="rain" aria-hidden="true"><div class="note" style="left: 46.1%; width: 91px; animation-duration: 6.08s; animation-delay: -2.44s"><div style="animation-duration: 2.20s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 47.6%; width: 66px; animation-duration: 9.89s; animation-delay: -5.89s"><div style="animation-duration: 2.14s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 26.7%; width: 103px; animation-duration: 8.79s; animation-delay: -0.77s"><div style="animation-duration: 2.30s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 22.1%; width: 97px; animation-duration: 6.29s; animation-delay: -5.60s"><div style="animation-duration: 2.28s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 16.6%; width: 65px; animation-duration: 10.20s; animation-delay: -9.70s"><div style="animation-duration: 1.62s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 41.8%; width: 112px; animation-duration: 6.45s; animation-delay: -4.19s"><div style="animation-duration: 2.39s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 63.2%; width: 77px; animation-duration: 6.35s; animation-delay: -9.86s"><div style="animation-duration: 2.20s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 21.9%; width: 90px; animation-duration: 7.15s; animation-delay: -1.54s"><div style="animation-duration: 2.79s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 33.1%; width: 80px; animation-duration: 5.90s; animation-delay: -9.26s"><div style="animation-duration: 1.83s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 83.1%; width: 86px; animation-duration: 6.68s; animation-delay: -6.03s"><div style="animation-duration: 2.12s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 71.3%; width: 96px; animation-duration: 6.18s; animation-delay: -2.24s"><div style="animation-duration: 2.21s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 8.5%; width: 64px; animation-duration: 7.56s; animation-delay: -6.81s"><div style="animation-duration: 2.56s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 89.8%; width: 79px; animation-duration: 7.69s; animation-delay: -4.96s"><div style="animation-duration: 2.19s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 78.8%; width: 85px; animation-duration: 7.70s; animation-delay: -2.64s"><div style="animation-duration: 1.83s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 69.8%; width: 69px; animation-duration: 6.85s; animation-delay: -7.67s"><div style="animation-duration: 2.95s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 91.0%; width: 110px; animation-duration: 9.80s; animation-delay: -7.47s"><div style="animation-duration: 2.55s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 52.1%; width: 63px; animation-duration: 7.12s; animation-delay: -3.57s"><div style="animation-duration: 1.79s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 37.0%; width: 98px; animation-duration: 9.19s; animation-delay: -2.67s"><div style="animation-duration: 3.12s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 0.7%; width: 81px; animation-duration: 8.43s; animation-delay: -4.41s"><div style="animation-duration: 1.56s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 93.1%; width: 86px; animation-duration: 9.86s; animation-delay: -5.87s"><div style="animation-duration: 2.24s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 11.8%; width: 103px; animation-duration: 9.98s; animation-delay: -2.64s"><div style="animation-duration: 1.44s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 14.5%; width: 99px; animation-duration: 8.99s; animation-delay: -6.60s"><div style="animation-duration: 2.97s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 21.6%; width: 105px; animation-duration: 6.34s; animation-delay: -0.37s"><div style="animation-duration: 1.55s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 2.0%; width: 90px; animation-duration: 9.65s; animation-delay: -8.43s"><div style="animation-duration: 1.66s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 46.4%; width: 65px; animation-duration: 6.90s; animation-delay: -4.88s"><div style="animation-duration: 1.52s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div><div class="note" style="left: 33.4%; width: 74px; animation-duration: 6.98s; animation-delay: -7.91s"><div style="animation-duration: 1.65s"><div class="bill"><span>UML</span><span>£500B</span></div></div></div></div>
+</div>
+<img class="spin-r" src="/assets/rosette.svg" alt="" aria-hidden="true" style="position: absolute; right: -14%; top: 50%; width: min(80vw, 900px); margin-top: calc(min(80vw, 900px) / -2); opacity: 0.08; pointer-events: none">
+<div style="position: relative; z-index: 2; max-width: 1320px; margin: 0 auto; padding: clamp(100px, 12vw, 170px) clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 56px">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 22px">
+<p class="kick">§05 — Try it yourself</p>
+<h2 class="hl" style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(40px, 5.4vw, 80px); line-height: 0.92; letter-spacing: -0.035em">
+<span class="ln"><span>Be the richest</span></span>
+<span class="ln"><span class="serif" style="color: #8CF0B4; font-size: 1.1em">person alive.</span></span>
+</h2>
+<div>
+<p class="hud"><span data-t="twKick"></span></p>
+<p style="margin: 8px 0 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(28px, 3.4vw, 48px); letter-spacing: -0.02em; color: #8CF0B4"><span data-t="twVal"></span></p>
+</div>
+<p style="margin: 0; font-size: 18px; line-height: 1.5; color: #B8C4BD; min-height: 27px"><span data-t="timerMsg"></span></p>
+<button class="btnp" type="button" data-on="toggleTimer" style="background: #8CF0B4; color: #000; border: 0; font: 700 17px Inter, sans-serif; padding: 0 32px; min-height: 56px; border-radius: 999px; cursor: pointer"><span data-t="timerBtn"></span></button>
+</div>
+<div style="flex: 0 1 440px; width: 100%; max-width: 440px; position: relative; aspect-ratio: 1">
+<svg viewBox="0 0 200 200" width="100%" height="100%" fill="none" aria-hidden="true">
+<path d="M100.0 16.0L100.0 23.0M108.8 16.5L108.5 19.4M117.5 17.8L116.8 20.8M126.0 20.1L125.0 23.0M134.2 23.3L132.9 26.0M142.0 27.3L138.5 33.3M149.4 32.0L147.6 34.5M156.2 37.6L154.2 39.8M162.4 43.8L160.2 45.8M168.0 50.6L165.5 52.4M172.7 58.0L166.7 61.5M176.7 65.8L174.0 67.1M179.9 74.0L177.0 75.0M182.2 82.5L179.2 83.2M183.5 91.2L180.6 91.5M184.0 100.0L177.0 100.0M183.5 108.8L180.6 108.5M182.2 117.5L179.2 116.8M179.9 126.0L177.0 125.0M176.7 134.2L174.0 132.9M172.7 142.0L166.7 138.5M168.0 149.4L165.5 147.6M162.4 156.2L160.2 154.2M156.2 162.4L154.2 160.2M149.4 168.0L147.6 165.5M142.0 172.7L138.5 166.7M134.2 176.7L132.9 174.0M126.0 179.9L125.0 177.0M117.5 182.2L116.8 179.2M108.8 183.5L108.5 180.6M100.0 184.0L100.0 177.0M91.2 183.5L91.5 180.6M82.5 182.2L83.2 179.2M74.0 179.9L75.0 177.0M65.8 176.7L67.1 174.0M58.0 172.7L61.5 166.7M50.6 168.0L52.4 165.5M43.8 162.4L45.8 160.2M37.6 156.2L39.8 154.2M32.0 149.4L34.5 147.6M27.3 142.0L33.3 138.5M23.3 134.2L26.0 132.9M20.1 126.0L23.0 125.0M17.8 117.5L20.8 116.8M16.5 108.8L19.4 108.5M16.0 100.0L23.0 100.0M16.5 91.2L19.4 91.5M17.8 82.5L20.8 83.2M20.1 74.0L23.0 75.0M23.3 65.8L26.0 67.1M27.3 58.0L33.3 61.5M32.0 50.6L34.5 52.4M37.6 43.8L39.8 45.8M43.8 37.6L45.8 39.8M50.6 32.0L52.4 34.5M58.0 27.3L61.5 33.3M65.8 23.3L67.1 26.0M74.0 20.1L75.0 23.0M82.5 17.8L83.2 20.8M91.2 16.5L91.5 19.4" stroke="#2C3D33" stroke-width="1"></path>
+<circle cx="100" cy="100" r="92" stroke="#1E2A23" stroke-width="2"></circle>
+<circle class="ring" cx="100" cy="100" r="92" stroke="#8CF0B4" stroke-width="3" stroke-linecap="round" stroke-dasharray="578.05" data-a-stroke-dashoffset="ringOff" stroke-dashoffset="0" transform="rotate(-90 100 100)"></circle>
+</svg>
+<div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px">
+<p aria-live="polite" class="mono" style="margin: 0; font-weight: 500; font-size: clamp(60px, 8.6vw, 116px); line-height: 1; color: #F2F5F3; letter-spacing: -0.05em"><span data-t="timer"></span></p>
+<p class="hud">Billionaire time left</p>
+</div>
+<div class="stamp" style="position: absolute; left: 50%; top: 50%; width: 270px; margin: -40px 0 0 -135px; font-size: 38px; padding: 8px 0">Dissolved</div>
+</div>
+</div>
+</section>
+
+<section id="tokenomics" class="anchor" style="max-width: 1320px; margin: 0 auto; padding: clamp(100px, 12vw, 180px) clamp(20px, 4vw, 48px)">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 72px">
+<div class="hl">
+<p class="kick" style="margin-bottom: 18px">§06 — Tokenomics</p>
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(40px, 5.6vw, 84px); line-height: 0.92; letter-spacing: -0.035em">
+<span class="ln"><span>Fully diluted.</span></span>
+<span class="ln"><span class="serif" style="color: #8CF0B4; font-size: 1.1em">Fully unserious.</span></span>
+</h2>
+</div>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #B8C4BD; max-width: 360px">Every box of $UML ships with the same ingredients. Read the label before you buy.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 72px 64px; align-items: center; justify-content: center">
+
+<div class="pbox-wrap" style="flex: 0 1 360px; width: 100%; max-width: 360px">
+<div style="position: relative; background: #8CF0B4; color: #000; border-radius: 12px; padding: 18px; aspect-ratio: 3 / 4.1; box-shadow: 20px 20px 0 #0E3A22, 0 50px 90px rgba(0,0,0,0.7); display: flex">
+<div style="flex: 1 1 auto; border: 2px solid #000; border-radius: 8px; padding: 16px; display: flex; flex-direction: column; justify-content: space-between; gap: 12px">
+<div>
+<p class="mono" style="margin: 0; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase">Est. by a man with £50</p>
+<p style="margin: 6px 0 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: 74px; line-height: 0.85; letter-spacing: -0.05em">UML</p>
+<p class="serif" style="margin: 8px 0 0; font-size: 21px; line-height: 1.15">Premium macaroni, noodles &amp; couscous*</p>
+</div>
+<div aria-hidden="true" style="position: relative; flex: 1 1 auto; min-height: 120px; background: #000; border-radius: 120px 120px 12px 12px; overflow: hidden">
+<svg class="floaty" viewBox="0 0 80 80" width="64" height="64" fill="none" style="position: absolute; left: 12%; top: 18%"><g stroke="#8CF0B4" stroke-width="1.8" stroke-linecap="round"><path d="M14 60 A46 46 0 0 1 60 14"></path><path d="M38 60 A22 22 0 0 1 60 38"></path><ellipse cx="26" cy="60" rx="12" ry="4"></ellipse><ellipse cx="60" cy="26" rx="4" ry="12"></ellipse><path d="M39.1 53.2 L16.3 45.8 M42.2 47.1 L22.8 33.0 M47.1 42.2 L33.0 22.8 M53.2 39.1 L45.8 16.3" stroke-width="1"></path></g></svg>
+<svg class="floaty fd1" viewBox="0 0 140 100" width="76" height="54" fill="none" style="position: absolute; right: 10%; top: 26%"><g stroke="#8CF0B4" stroke-width="1.6" stroke-linejoin="round"><path d="M70 50 L22 18 L16 26 L22 34 L16 42 L22 50 L16 58 L22 66 L16 74 L22 82 Z"></path><path d="M70 50 L118 18 L124 26 L118 34 L124 42 L118 50 L124 58 L118 66 L124 74 L118 82 Z"></path><path d="M62 46 L30 26 M62 50 L28 50 M62 54 L30 74 M78 46 L110 26 M78 50 L112 50 M78 54 L110 74" stroke-width="0.9"></path><ellipse cx="70" cy="50" rx="7" ry="13" fill="#000"></ellipse></g></svg>
+<svg class="floaty fd2" viewBox="0 0 120 120" width="62" height="62" fill="none" style="position: absolute; left: 34%; bottom: 4%"><g stroke="#8CF0B4" stroke-width="1.6" stroke-linecap="round"><path d="M24 84 L76 32 M44 104 L96 52"></path><ellipse cx="86" cy="42" rx="14.1" ry="5" transform="rotate(45 86 42)"></ellipse><ellipse cx="34" cy="94" rx="14.1" ry="5" transform="rotate(45 34 94)"></ellipse><path d="M30.7 90.7 L82.7 38.7 M37.3 97.3 L89.3 45.3" stroke-width="0.9"></path></g></svg>
+<svg class="floaty fd3" viewBox="0 0 100 100" width="58" height="58" style="position: absolute; right: 8%; bottom: 6%" fill="#8CF0B4"><circle cx="50.8" cy="57.7" r="2.7"></circle><circle cx="73.4" cy="39.4" r="3.1"></circle><circle cx="53.9" cy="67.3" r="2.5"></circle><circle cx="54.1" cy="40.0" r="2.6"></circle><circle cx="32.1" cy="35.3" r="3.2"></circle><circle cx="39.9" cy="35.0" r="2.4"></circle><circle cx="41.2" cy="51.2" r="3.3"></circle><circle cx="64.7" cy="36.7" r="2.6"></circle><circle cx="40.8" cy="70.4" r="2.3"></circle><circle cx="72.7" cy="55.5" r="2.5"></circle><circle cx="29.9" cy="46.4" r="2.6"></circle><circle cx="63.3" cy="49.8" r="2.7"></circle><circle cx="34.0" cy="66.3" r="2.6"></circle><circle cx="23.4" cy="41.8" r="2.3"></circle><circle cx="39.1" cy="42.2" r="2.6"></circle><circle cx="47.2" cy="26.6" r="2.2"></circle><circle cx="25.4" cy="62.4" r="2.9"></circle><circle cx="39.5" cy="59.8" r="2.3"></circle><circle cx="69.4" cy="48.2" r="2.4"></circle><circle cx="56.6" cy="52.1" r="2.4"></circle><circle cx="65.7" cy="62.1" r="3.1"></circle><circle cx="78.9" cy="45.7" r="3.0"></circle><circle cx="55.8" cy="28.0" r="2.9"></circle><circle cx="28.6" cy="53.1" r="2.2"></circle><circle cx="20.6" cy="52.0" r="2.3"></circle><circle cx="58.7" cy="59.4" r="2.6"></circle></svg>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 12px">
+<p class="mono" style="margin: 0; font-size: 10px; line-height: 1.4; text-transform: uppercase; letter-spacing: 0.08em">Net wt.<br><b style="font-size: 12px">£500,000,000,000</b></p>
+<p class="mono" style="margin: 0; font-size: 8px; line-height: 1.4; text-align: right; max-width: 120px">*Contains no macaroni, noodles or couscous.</p>
+</div>
+</div>
+<div aria-hidden="true" style="position: absolute; top: -34px; right: -34px; width: 112px; height: 112px">
+<svg class="spin-f" viewBox="0 0 100 100" width="112" height="112" style="position: absolute; inset: 0"><polygon points="50.0,0.0 56.1,7.4 64.1,2.0 67.9,10.9 77.0,7.9 78.2,17.5 87.8,17.3 86.2,26.8 95.5,29.2 91.3,37.9 99.5,42.9 93.0,50.0 99.5,57.1 91.3,62.1 95.5,70.8 86.2,73.2 87.8,82.7 78.2,82.5 77.0,92.1 67.9,89.1 64.1,98.0 56.1,92.6 50.0,100.0 43.9,92.6 35.9,98.0 32.1,89.1 23.0,92.1 21.8,82.5 12.2,82.7 13.8,73.2 4.5,70.8 8.7,62.1 0.5,57.1 7.0,50.0 0.5,42.9 8.7,37.9 4.5,29.2 13.8,26.8 12.2,17.3 21.8,17.5 23.0,7.9 32.1,10.9 35.9,2.0 43.9,7.4" fill="#000"></polygon></svg>
+<div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; transform: rotate(12deg); color: #8CF0B4; text-align: center; line-height: 1.05"><span class="mono" style="font-size: 9px; letter-spacing: 0.16em">NOW ON</span><span style="font-family: Montserrat, sans-serif; font-weight: 900; font-size: 15px">SOLANA</span></div>
+</div>
+</div>
+</div>
+
+<div class="rv" style="flex: 0 1 400px; width: 100%; max-width: 400px">
+<div class="nf">
+<p style="font-weight: 900; font-size: 40px; letter-spacing: -0.02em; line-height: 1">Nutrition Facts</p>
+<p style="margin-top: 6px; font-size: 15px">Servings per container: [SUPPLY]</p>
+<div class="nf-r" style="font-weight: 800; font-size: 16px"><span>Serving size</span><span>1 $UML</span></div>
+<div class="nf-thick"></div>
+<p style="font-weight: 800; font-size: 13px; padding-top: 4px">Amount per serving</p>
+<div style="display: flex; justify-content: space-between; align-items: baseline"><span style="font-weight: 900; font-size: 30px">Revenue</span><span style="font-weight: 900; font-size: 38px">£0</span></div>
+<div class="nf-med"></div>
+<p style="text-align: right; font-size: 12px; font-weight: 700; padding: 4px 0">% Daily Value*</p>
+<div class="nf-r"><span><b>Buy / sell tax</b></span><span>[TAX]</span></div>
+<div class="nf-r"><span><b>Liquidity</b></span><span>[LP STATUS]</span></div>
+<div class="nf-r"><span><b>Mint authority</b></span><span>[STATUS]</span></div>
+<div class="nf-r"><span><b>Freeze authority</b></span><span>[STATUS]</span></div>
+<div class="nf-r"><span><b>Intrinsic value</b> 0g</span><span><b>0%</b></span></div>
+<div class="nf-r"><span><b>Pasta</b> 0g</span><span><b>0%</b></span></div>
+<div class="nf-r"><span><b>Hope</b></span><span><b>100%</b></span></div>
+<div class="nf-thick"></div>
+<p style="font-size: 12px; line-height: 1.5; padding-top: 8px"><b>Ingredients:</b> macaroni, noodles, couscous (theoretical), one stranger's £50, unlimited hope.</p>
+<p style="font-size: 11px; line-height: 1.5; padding-top: 6px">*Not financial advice. Daily values are based on a 2,000-meme diet.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="buy" class="anchor" style="max-width: 1320px; margin: 0 auto; padding: clamp(60px, 8vw, 120px) clamp(20px, 4vw, 48px) clamp(100px, 12vw, 160px)">
+<div class="hl" style="margin-bottom: 56px">
+<p class="kick" style="margin-bottom: 18px">§07 — How to buy</p>
+<h2 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 900; font-size: clamp(40px, 5.6vw, 84px); line-height: 0.92; letter-spacing: -0.035em">
+<span class="ln"><span>Easier than</span></span>
+<span class="ln"><span class="serif" style="color: #8CF0B4; font-size: 1.1em">finding Hope.</span></span>
+</h2>
+</div>
+<ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px">
+<li class="rv"><div class="step">
+<div style="display: flex; justify-content: space-between; align-items: center"><span class="mono" style="font-size: 14px; color: #8CF0B4">01</span><svg class="ico" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#8CF0B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7.5A2.5 2.5 0 0 1 5.5 5H18a2 2 0 0 1 2 2v1"></path><path d="M3 7.5V17a2 2 0 0 0 2 2h14a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1H5.5A2.5 2.5 0 0 1 3 7.5z"></path><circle cx="16.5" cy="13.5" r="1.2"></circle></svg></div>
+<h3 style="margin: 12px 0 0; font-family: Montserrat, sans-serif; font-size: 24px; font-weight: 800">Get a wallet</h3>
+<p style="margin: 0; color: #B8C4BD; line-height: 1.65; font-size: 16px">Download Phantom or Solflare on your phone or as a browser extension.</p>
+</div></li>
+<li class="rv"><div class="step">
+<div style="display: flex; justify-content: space-between; align-items: center"><span class="mono" style="font-size: 14px; color: #8CF0B4">02</span><svg class="ico" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#8CF0B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3"></ellipse><path d="M5 6v4c0 1.7 3.1 3 7 3s7-1.3 7-3V6"></path><path d="M5 10v4c0 1.7 3.1 3 7 3s7-1.3 7-3v-4"></path><path d="M5 14v4c0 1.7 3.1 3 7 3s7-1.3 7-3v-4"></path></svg></div>
+<h3 style="margin: 12px 0 0; font-family: Montserrat, sans-serif; font-size: 24px; font-weight: 800">Load up SOL</h3>
+<p style="margin: 0; color: #B8C4BD; line-height: 1.65; font-size: 16px">Buy SOL in your wallet or on an exchange and send it over. Keep a little extra for fees.</p>
+</div></li>
+<li class="rv"><div class="step">
+<div style="display: flex; justify-content: space-between; align-items: center"><span class="mono" style="font-size: 14px; color: #8CF0B4">03</span><svg class="ico" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#8CF0B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"></rect><path d="M9 4V3h6v1"></path><path d="M9 10h6M9 14h6M9 18h3"></path></svg></div>
+<h3 style="margin: 12px 0 0; font-family: Montserrat, sans-serif; font-size: 24px; font-weight: 800">Paste the CA</h3>
+<p style="margin: 0; color: #B8C4BD; line-height: 1.65; font-size: 16px">Open [PUMP.FUN / JUPITER / RAYDIUM] and paste the $UML contract address. Make sure it matches this site.</p>
+</div></li>
+<li class="rv"><div class="step">
+<div style="display: flex; justify-content: space-between; align-items: center"><span class="mono" style="font-size: 14px; color: #8CF0B4">04</span><svg class="ico" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#8CF0B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h14l-4-4"></path><path d="M20 16H6l4 4"></path></svg></div>
+<h3 style="margin: 12px 0 0; font-family: Montserrat, sans-serif; font-size: 24px; font-weight: 800">Swap</h3>
+<p style="margin: 0; color: #B8C4BD; line-height: 1.65; font-size: 16px">Swap SOL for $UML. Congratulations: you are now a shareholder in absolutely nothing.</p>
+</div></li>
+</ol>
+</section>
+
+<section aria-label="Epilogue" style="border-top: 1px solid #1E2A23">
+<div style="max-width: 1160px; margin: 0 auto; padding: clamp(90px, 11vw, 160px) clamp(20px, 4vw, 48px)">
+<p class="kick">Epilogue</p>
+<p data-ref="rQuote" class="serif" style="margin: 26px 0 0; font-size: clamp(34px, 5.2vw, 78px); line-height: 1.08; color: #F2F5F3"><span class="qw">Unfortunately,</span><span class="qw">the</span><span class="qw">world's</span><span class="qw">shortest</span><span class="qw">billionaire</span><span class="qw">career</span><span class="qw">didn't</span><span class="qw">come</span><span class="qw">with</span><span class="qw">a</span><span class="qw">billionaire's</span><span class="qw">bank</span><span class="qw">account.</span></p>
+</div>
+</section>
+
+<section data-ref="rFin" aria-label="Buy UML" style="position: relative; overflow: clip; border-top: 1px solid #1E2A23">
+<img class="spin" src="/assets/rosette.svg" alt="" aria-hidden="true" style="position: absolute; left: 50%; top: 50%; width: min(120vw, 1300px); margin-left: calc(min(120vw, 1300px) / -2); margin-top: calc(min(120vw, 1300px) / -2); opacity: 0.07; pointer-events: none">
+<div style="position: relative; max-width: 1320px; margin: 0 auto; padding: clamp(100px, 12vw, 180px) clamp(20px, 4vw, 48px) clamp(70px, 9vw, 110px); display: flex; flex-direction: column; align-items: center; text-align: center; gap: 28px">
+<p class="kick">Unlimited money · limited everything else</p>
+<div class="fin rv" role="img" aria-label="UML"><span class="fin-base" aria-hidden="true">UML</span><span data-ref="rFinMoney" class="fin-money" aria-hidden="true">UML</span></div>
+<p class="serif" style="margin: 0; font-size: clamp(22px, 2.6vw, 34px); color: #B8C4BD">Hope had a feeling something might come of it.</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 6px">
+<a class="btnp" href="[PUMP.FUN / DEX LINK]" style="background: #8CF0B4; color: #000; text-decoration: none; font-weight: 700; font-size: 17px; padding: 0 30px; min-height: 56px; border-radius: 999px; display: inline-flex; align-items: center">Buy $UML</a>
+<a class="btng" href="[TELEGRAM LINK]" style="border: 1px solid #2C3D33; color: #F2F5F3; text-decoration: none; font-weight: 600; font-size: 17px; padding: 0 26px; min-height: 56px; border-radius: 999px; display: inline-flex; align-items: center">Join the Telegram</a>
+</div>
+</div>
+</section>
+
+<footer>
+<div style="max-width: 1320px; margin: 0 auto; padding: 48px clamp(20px, 4vw, 48px) 56px; display: flex; flex-direction: column; gap: 24px; border-top: 1px solid #1E2A23">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<span style="font-family: Montserrat, sans-serif; font-weight: 900; font-size: 22px; letter-spacing: -0.02em; color: #8CF0B4">$UML</span>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 15px">
+<a href="[X LINK]" style="color: #B8C4BD; text-decoration: none">X</a>
+<a href="[TELEGRAM LINK]" style="color: #B8C4BD; text-decoration: none">Telegram</a>
+<a href="[DEXSCREENER LINK]" style="color: #B8C4BD; text-decoration: none">Dexscreener</a>
+</div>
+</div>
+<p style="margin: 0; font-size: 13px; line-height: 1.7; color: #8A988F; max-width: 920px">$UML is a memecoin with no intrinsic value, no team promises and no expectation of financial return. It is a fan tribute to a viral video and is not affiliated with, endorsed by or connected to Max Fosh or the original Unlimited Money Limited. Like the original, $UML does not manufacture macaroni, noodles or couscous. Nothing here is financial advice. Crypto is volatile; only use money you can afford to lose.</p>
+</div>
+</footer>
+
+<div class="grain" aria-hidden="true"></div>
+<div data-ref="rCur" class="cur" aria-hidden="true"></div>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>
