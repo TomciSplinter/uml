@@ -108,7 +108,7 @@ class Component extends DCLogic {
     });
 
     this.copy = function () {
-      const ca = self.props.contractAddress ?? '[CONTRACT ADDRESS — COMING SOON]';
+      const ca = self.props.contractAddress ?? '7GEWPxezFsYZL4LWT4LU7AWKyndSaVm62UXakTgepump';
       try { navigator.clipboard.writeText(ca); } catch (e) {}
       self.setState({ copied: true });
       clearTimeout(self.ct);
@@ -422,7 +422,7 @@ class Component extends DCLogic {
 
   renderVals() {
     const s = this.state;
-    const ca = this.props.contractAddress ?? '[CONTRACT ADDRESS — COMING SOON]';
+    const ca = this.props.contractAddress ?? '7GEWPxezFsYZL4LWT4LU7AWKyndSaVm62UXakTgepump';
     const cls = function (base, on) { return on ? base + ' on' : base; };
     const scenes = ['Intro', 'The investor', 'The company', 'The valuation', 'The ending'];
     const huds = [
@@ -476,7 +476,7 @@ class Component extends DCLogic {
 }
 
 (function () {
-  var props = { contractAddress: (window.UML_CONFIG && window.UML_CONFIG.contractAddress) || '[CONTRACT ADDRESS — COMING SOON]' };
+  var props = { contractAddress: (window.UML_CONFIG && window.UML_CONFIG.contractAddress) || '7GEWPxezFsYZL4LWT4LU7AWKyndSaVm62UXakTgepump' };
   var c = new Component(props);
   var root = document;
   var vals = c.renderVals();

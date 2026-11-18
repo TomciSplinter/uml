@@ -8,10 +8,10 @@ Launch site for $UML on Solana. Plain static HTML/CSS/JS with no build step.
 3. Deploy.
 
 ## Before launch, fill in
-- **Contract address:** in `index.html`, edit `window.UML_CONFIG.contractAddress` near the top.
+- **Contract address:** set (`7GEWPxezFsYZL4LWT4LU7AWKyndSaVm62UXakTgepump`). To change it, edit `window.UML_CONFIG.contractAddress` near the top of `index.html`.
 - **Links:** search `index.html` for these placeholders and replace them with real URLs:
-  `[BUY LINK]`, `[PUMP.FUN / DEX LINK]`, `[DEXSCREENER LINK]`, `[X LINK]`, `[TELEGRAM LINK]`
-- **Tokenomics:** search for `[SUPPLY]`, `[TAX]`, `[LP STATUS]`, `[STATUS]`, `[PUMP.FUN / JUPITER / RAYDIUM]`
+  `[X LINK]`, `[TELEGRAM LINK]` (buy and chart links already point to pump.fun and DexScreener)
+- **Tokenomics:** search for `[SUPPLY]`, `[TAX]`, `[LP STATUS]`, `[STATUS]`
 
 ## Files
 - `index.html`: page markup
